@@ -92,12 +92,12 @@ $(document).ready(function () {
       });
     }
 
-    if ($(this).scrollTop() > 2700) {
+    if ($(this).scrollTop() > 2600) {
       $(".sticky--five span").css({
         opacity: "0",
         transition: "opacity 200ms",
       });
-      $(".last-project-title").css({
+      $(".sticky--five .project-title").css({
         opacity: "0",
         transition: "opacity 200ms",
       });
@@ -106,7 +106,27 @@ $(document).ready(function () {
         opacity: "1",
         transition: "opacity 200ms",
       });
-      $(".last-project-title").css({
+      $(".sticky--five .project-title").css({
+        opacity: "1",
+        transition: "opacity 200ms",
+      });
+    }
+
+    if ($(this).scrollTop() > 2700) {
+      $(".sticky--six span").css({
+        opacity: "0",
+        transition: "opacity 200ms",
+      });
+      $(".sticky--six .project-title").css({
+        opacity: "0",
+        transition: "opacity 200ms",
+      });
+    } else {
+      $(".sticky--six span").css({
+        opacity: "1",
+        transition: "opacity 200ms",
+      });
+      $(".sticky--six .project-title").css({
         opacity: "1",
         transition: "opacity 200ms",
       });
