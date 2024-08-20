@@ -17,8 +17,16 @@ $(document).ready(function () {
         opacity: "0",
         transition: "opacity 200ms",
       });
+      $(".sticky--one .project-title").css({
+        opacity: "0",
+        transition: "opacity 200ms",
+      });
     } else {
       $(".sticky--one span").css({
+        opacity: "1",
+        transition: "opacity 200ms",
+      });
+      $(".sticky--one .project-title").css({
         opacity: "1",
         transition: "opacity 200ms",
       });
@@ -29,8 +37,16 @@ $(document).ready(function () {
         opacity: "0",
         transition: "opacity 200ms",
       });
+      $(".sticky--two .project-title").css({
+        opacity: "0",
+        transition: "opacity 200ms",
+      });
     } else {
       $(".sticky--two span").css({
+        opacity: "1",
+        transition: "opacity 200ms",
+      });
+      $(".sticky--two .project-title").css({
         opacity: "1",
         transition: "opacity 200ms",
       });
@@ -41,8 +57,16 @@ $(document).ready(function () {
         opacity: "0",
         transition: "opacity 200ms",
       });
+      $(".sticky--three .project-title").css({
+        opacity: "0",
+        transition: "opacity 200ms",
+      });
     } else {
       $(".sticky--three span").css({
+        opacity: "1",
+        transition: "opacity 200ms",
+      });
+      $(".sticky--three .project-title").css({
         opacity: "1",
         transition: "opacity 200ms",
       });
@@ -53,20 +77,36 @@ $(document).ready(function () {
         opacity: "0",
         transition: "opacity 200ms",
       });
+      $(".sticky--four .project-title").css({
+        opacity: "0",
+        transition: "opacity 200ms",
+      });
     } else {
       $(".sticky--four span").css({
         opacity: "1",
         transition: "opacity 200ms cubic",
       });
+      $(".sticky--four .project-title").css({
+        opacity: "1",
+        transition: "opacity 200ms",
+      });
     }
 
-    if ($(this).scrollTop() > 3000) {
+    if ($(this).scrollTop() > 2700) {
       $(".sticky--five span").css({
+        opacity: "0",
+        transition: "opacity 200ms",
+      });
+      $(".last-project-title").css({
         opacity: "0",
         transition: "opacity 200ms",
       });
     } else {
       $(".sticky--five span").css({
+        opacity: "1",
+        transition: "opacity 200ms",
+      });
+      $(".last-project-title").css({
         opacity: "1",
         transition: "opacity 200ms",
       });
